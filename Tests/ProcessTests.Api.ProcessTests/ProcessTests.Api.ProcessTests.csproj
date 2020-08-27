@@ -16,11 +16,21 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-
+	  <None Remove="appsettings.json" />
+	  <None Remove="appsettings.ProcessTests.json" />
+	  <None Remove="processTestSettings.json" />
 	</ItemGroup>
 
 	<ItemGroup>
-
+	  <Content Include="appsettings.json">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="appsettings.ProcessTests.json">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="processTestSettings.json">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
 	</ItemGroup>
 
 	<ItemGroup>

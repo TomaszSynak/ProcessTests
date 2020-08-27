@@ -1,0 +1,7 @@
+{
+	"ProcessTestSettings": {
+		"TokenExpiration": "00:00:30",
+		"RunLoggingInUserProcessTest": "true",
+		"RunUpdatingUserEmailProcessTest":  "true"
+	}
+}
