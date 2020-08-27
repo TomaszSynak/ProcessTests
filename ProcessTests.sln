@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProcessTests.Api", "Projects\ProcessTests.Api\ProcessTests.Api.csproj", "{DAD26BF9-22EF-4221-A960-E3F2F82AD40C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projects", "Projects", "{37CD45EE-2915-4696-B596-9D8DC11DF7BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AD9A2C7B-FA9A-4B82-A524-B5F48A624C49}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		ProcessTests.ruleset = ProcessTests.ruleset
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C22298DE-F4C8-4C45-B676-8090F6D33EAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessTests.Api.ProcessTests", "Tests\ProcessTests.Api.ProcessTests\ProcessTests.Api.ProcessTests.csproj", "{DC16E635-7EC8-44DB-8D4B-D389B0006B93}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAD26BF9-22EF-4221-A960-E3F2F82AD40C}.Debug|x64.ActiveCfg = Debug|x64
+		{DAD26BF9-22EF-4221-A960-E3F2F82AD40C}.Debug|x64.Build.0 = Debug|x64
+		{DAD26BF9-22EF-4221-A960-E3F2F82AD40C}.Release|x64.ActiveCfg = Release|Any CPU
+		{DAD26BF9-22EF-4221-A960-E3F2F82AD40C}.Release|x64.Build.0 = Release|Any CPU
+		{DC16E635-7EC8-44DB-8D4B-D389B0006B93}.Debug|x64.ActiveCfg = Debug|x64
+		{DC16E635-7EC8-44DB-8D4B-D389B0006B93}.Debug|x64.Build.0 = Debug|x64
+		{DC16E635-7EC8-44DB-8D4B-D389B0006B93}.Release|x64.ActiveCfg = Release|Any CPU
+		{DC16E635-7EC8-44DB-8D4B-D389B0006B93}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DAD26BF9-22EF-4221-A960-E3F2F82AD40C} = {37CD45EE-2915-4696-B596-9D8DC11DF7BE}
+		{DC16E635-7EC8-44DB-8D4B-D389B0006B93} = {C22298DE-F4C8-4C45-B676-8090F6D33EAC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {51FEE886-D13E-45A4-919A-EBEA66ED9A6C}
+	EndGlobalSection
+EndGlobal
