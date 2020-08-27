@@ -1,9 +1,10 @@
 namespace ProcessTests.Api
 {
+    using System.Security.Authentication;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.Extensions.Hosting;
 
-    public class Program
+    public static class Program
     {
         public static void Main(string[] args)
         {
@@ -14,7 +15,12 @@ namespace ProcessTests.Api
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>();
+                    webBuilder.ConfigureKestrel((context, serverOptions) =>
+                    {
+                        serverOptions.ConfigureHttpsDefaults(configureOptions => configureOptions.SslProtocols = SslProtocols.Tls12);
+                    })
+                    .UseStartup<Startup>()
+                    .CaptureStartupErrors(true);
                 });
     }
 }
